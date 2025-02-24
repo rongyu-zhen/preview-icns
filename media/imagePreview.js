@@ -296,6 +296,9 @@
             hasLoadedImage = true;
             document.body.classList.add("error");
             document.body.classList.remove("loading");
+            if (image.parentNode) {
+                document.body.removeChild(image);
+            }
         });
 
         image.src = settings.images[settings.key].body;
@@ -326,7 +329,13 @@
 
         switch (e.data.type) {
             case "setResolution": {
-                image.src = settings.images[e.data.key] ? settings.images[e.data.key].body : image.src;
+                if (settings.images[e.data.key]) {
+                    hasLoadedImage = false;
+                    document.body.classList.remove("ready");
+                    document.body.classList.remove("error");
+                    document.body.classList.add("loading");
+                    image.src = settings.images[e.data.key].body;
+                }
                 break;
             }
             case "setScale": {
