@@ -12,7 +12,7 @@ import { Scale, ZoomStatusBarEntry } from "./zoomStatusBarEntry";
 import { ICNS, ISize } from "../util/icns";
 
 export class PreviewManager implements vscode.CustomReadonlyEditorProvider {
-    public static readonly viewType = "gocount.preview-icns";
+    public static readonly viewType = "rongyu-zhen.preview-icns";
 
     private readonly _previews = new Set<ImagePreview>();
     private _activePreview: ImagePreview | undefined;

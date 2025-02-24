@@ -2,10 +2,22 @@
   "name": "preview-icns",
   "displayName": "preview-icns",
   "description": "preview .icns file.",
+  "author": "Rongyu Zhen",
+  "publisher": "rongyu-zhen",
+  "license": "MIT",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.96.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rongyu-zhen/preview-icns.git"
+  },
+  "keywords": [
+    "vscode",
+    "icns",
+    "preview"
+  ],
   "categories": [
     "Other"
   ],
@@ -14,7 +26,7 @@
   "contributes": {
     "customEditors": [
       {
-        "viewType": "gocount.preview-icns",
+        "viewType": "rongyu-zhen.preview-icns",
         "displayName": "Preview ICNS",
         "selector": [
           {
