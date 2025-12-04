@@ -3,9 +3,10 @@
   "displayName": "preview-icns",
   "description": "preview .icns file.",
   "author": "Rongyu Zhen",
-  "publisher": "rongyu-zhen",
+  "publisher": "zhenrongyu",
   "license": "MIT",
   "version": "0.0.1",
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.96.0"
   },
